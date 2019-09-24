@@ -1,10 +1,6 @@
-<p align="center">
 # Uploading files with Multer in Node
-</p>
 
-<p style="color: green">
 ## Installation
-</p>
 
 #### It requires [Node.js](https://nodejs.org) to run.
 
