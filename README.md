@@ -1,8 +1,8 @@
-<p align="center" style="color: #2c3e50">
+<p align="center">
 # Uploading files with Multer in Node
 </p>
 
-<p style="color: #27ae60">
+<p style="color: green">
 ## Installation
 </p>
 
