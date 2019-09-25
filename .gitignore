@@ -18,6 +18,8 @@ dist/
 uploads/
 logs/
 node_modules/
+Server/node_modules
+Server/package.lock.json
 tmp/
 temp/
 platforms/
