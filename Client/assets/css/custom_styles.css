@@ -1,0 +1,48 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 15px;
+    color: #333;
+    background-color: #fff;
+    letter-spacing: 1px;
+    font-family: Ubuntu;
+}
+
+/* Navbar Styles */
+#navigation {
+    background: #2c3e50;
+    padding: 10px 10px;
+    z-index: 100;
+    width: 100%;
+}
+
+#navigation li {
+    padding: 0 10px;
+}
+
+#navigation li a {
+    color: #fff;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+    color: #fff;
+    outline: none;
+}
+
+button.navbar-toggler {
+  outline: none;
+}
+
+.navbar-toggler-icon {
+    background: url(../img/menu-circle.png);
+    background-size: 100%;
+}
+
+.fixedNav #navigation {
+    position: fixed;
+    top: 0;
+}
+/* End of Navbar Styles */

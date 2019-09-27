@@ -1,7 +1,7 @@
 /*
-  1. body-parser extract the entire body portion of an incoming 
+  1. body-parser extract the entire body portion of an incoming
   request stream and exposes it on req.body
-  2. Cross-origin resource sharing (CORS) allows AJAX requests 
+  2. Cross-origin resource sharing (CORS) allows AJAX requests
   to skip the Same-origin policy and access resources from remote hosts.
  */
 const express = require('express'),
@@ -12,7 +12,7 @@ multer = require('multer'),
 fs = require('fs');
 https = require('https'),
 http = require('http'),
-cors = require('cors'), 
+cors = require('cors'),
 os = require('os'),
 ifaces = os.networkInterfaces(),
 
@@ -26,6 +26,9 @@ app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested- With, Content-Type, Accept");
   next();
 });
+
+/* Set static files */
+app.use(express.static(__dirname + '/../Client/assets/'));
 
 var path = require('path');
 
@@ -102,10 +105,12 @@ httpsServer.listen(9002, LANAccess, function () {
 
 });
 
+
+/* Default root file */
 app.get('/',function(req,res){
 
-  res.send('Hello World');
+  // res.send('Hello World');
+
+  res.sendFile(path.resolve(__dirname + '/../Client/index.html'));
 
 });
-
-
