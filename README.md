@@ -20,3 +20,5 @@ $ cd File-Upload-With-Multer/Server
 $ npm i
 $ node server.js
 ```
+
+#### Open the browser and type https://localhost:9002
