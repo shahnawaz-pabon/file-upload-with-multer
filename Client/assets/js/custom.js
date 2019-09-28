@@ -12,4 +12,8 @@ $(document).ready(function(){
       showCursor: false
   });
 
+  /* Upload file with ajax request */
+
+  /* Upload file with ajax request ends */
+
 });

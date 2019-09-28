@@ -42,6 +42,7 @@ app.use(function(req, res, next){
 app.use(bodyParser.json());
 
 
+/* Set Storage */
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, 'uploads');
@@ -52,8 +53,9 @@ var storage = multer.diskStorage({
   }
 })
 
-var upload = multer({ storage: storage }).single('myFile');
+var upload = multer({ storage: storage });
 
+/* Set Storage ends*/
 
 // Public Self-Signed Certificates for HTTPS connection
 var privateKey = fs.readFileSync('certificates/key.pem', 'utf8');
@@ -110,7 +112,32 @@ httpsServer.listen(9002, LANAccess, function () {
 app.get('/',function(req,res){
 
   // res.send('Hello World');
-
   res.sendFile(path.resolve(__dirname + '/../Client/index.html'));
+
+});
+
+// upload single file
+app.post('/singlefileupload', upload.single('myFile'), function(req, res) {
+
+  console.log(req.file);
+
+  try {
+    return res.send({status: "Success", file: req.file});
+  }catch(err) {
+    return res.status(400).json({error: err});
+  }
+
+});
+
+// upload multiple files
+app.post('/multiplefileupload', upload.array('myFiles'), function(req, res) {
+
+  console.log(req.files);
+
+  try {
+    return res.send({status: "Success", files: req.files});
+  }catch(err) {
+    return res.status(400).json({error: err});
+  }
 
 });
