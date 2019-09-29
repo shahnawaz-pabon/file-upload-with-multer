@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/custom_styles.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="css/filepond.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
     <!-- End of CSS links -->
 
     <!--/  Favicon
@@ -46,16 +48,32 @@
     </div>
 
     <!-- Upload file section -->
-    <div class="wrapper">
+    <!-- <div class="wrapper">
       <div class="file-upload">
           <input type="file" name="myFile" id="fileUpload" multiple/>
           <i class="fas fa-cloud-upload-alt"></i>
       </div>
-    </div>
+    </div> -->
     <!-- Upload file section ends -->
 
-    <div id="download_section"></div>
+    <!-- <div id="download_section"></div> -->
 
+    <!-- We'll transform this input into a pond -->
+    <div class="pond">
+      <input type="file"
+        class="filepond"
+        name="myFiles"
+        multiple
+        data-max-file-size="3MB"
+        data-max-files="3">
+    </div>
+
+
+    <!-- Load FilePond library -->
+    <script src="js/filepond.min.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js"></script>
     <script src="js/typed.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>

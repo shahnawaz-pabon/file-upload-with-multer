@@ -60,6 +60,18 @@ button.navbar-toggler {
 /* End of Typed message styles */
 
 /* Input file styles */
+.pond {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 18em;
+}
+
+.filepond--drop-label label {
+  font-family: Ubuntu;
+  font-weight: bold !important;
+}
+
 .wrapper{
   width:100%;
   height:100%;
