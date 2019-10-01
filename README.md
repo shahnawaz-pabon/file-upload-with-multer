@@ -22,3 +22,17 @@ $ node server.js
 ```
 
 #### Open the browser and type https://localhost:9002
+
+#### Server is running with https now, if you want it run with http just find out below section in the `server.js` file
+
+```javascript
+httpsServer.listen(9002, LANAccess, function () {
+
+    console.log("\n*****");
+    console.log("Server is listening...");
+    console.log("*****\n\n\n");
+
+});
+```
+
+#### Replace `httpsServer` with `httpServer` and run `node server.js` this command in the console.
