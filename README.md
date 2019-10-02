@@ -19,7 +19,7 @@
 * [Multer](https://www.npmjs.com/package/multer)
 * [FilePond](https://github.com/pqina/filepond)
 
-## 🛠️ Installation
+## Installation
 
 #### It requires [Node.js](https://nodejs.org) to run.
 
