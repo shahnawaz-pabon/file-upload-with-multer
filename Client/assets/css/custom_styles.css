@@ -70,6 +70,29 @@ button.navbar-toggler {
 .filepond--drop-label label {
   font-family: Ubuntu;
   font-weight: bold !important;
+  color: #4c4e53;
+}
+
+/* .filepond--drop-label {
+	color: #4c4e53;
+}
+
+.filepond--label-action {
+	text-decoration-color: #babdc0;
+}
+
+.filepond--panel-root {
+	background-color: #edf0f4;
+} */
+
+.filepond--root {
+	width:170px;
+	margin: 0 auto;
+}
+
+.profile-section {
+  text-align: center;
+  margin-top: 60px;
 }
 
 .wrapper{

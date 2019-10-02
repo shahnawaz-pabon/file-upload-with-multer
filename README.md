@@ -8,6 +8,17 @@
 ## [Node](https://nodejs.org) and [NPM](https://www.npmjs.com/) versions I have used
 > [NPM](https://www.npmjs.com/) version `v6.9.0` and [Node](https://nodejs.org) version `v10.16.3`
 
+### Table of Contents
+* [Technologies](#technologies)
+* [Installation](#installation)
+
+## Technologies
+
+#### Technologies I have used are as follows
+* [Typed.js](https://github.com/mattboldt/typed.js/)
+* [Multer](https://www.npmjs.com/package/multer)
+* [FilePond](https://github.com/pqina/filepond)
+
 ## 🛠️ Installation
 
 #### It requires [Node.js](https://nodejs.org) to run.

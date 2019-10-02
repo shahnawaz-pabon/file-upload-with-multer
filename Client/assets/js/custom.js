@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  /* This section is for automatic typing */
   var typed = new Typed(".typed-text", {
       strings: ["Upload File with Multer", "by", "Pabon"],
       typeSpeed: 30,
@@ -11,31 +12,50 @@ $(document).ready(function(){
       startDelay: 1000,
       showCursor: false
   });
+  /* End of This section is for automatic typing */
 
-  /* Upload file with ajax request */
-
-  // const inputElement = document.querySelector('input[type="file"]');
-  // const pond = FilePond.create( inputElement );
+  /* Upload file via FilePond with rest call */
 
   FilePond.registerPlugin(
-    FilePondPluginImagePreview,
     FilePondPluginImageExifOrientation,
-    FilePondPluginFileValidateSize
+    FilePondPluginFileValidateSize,
+    FilePondPluginFileValidateType,
+    FilePondPluginImagePreview,
+    FilePondPluginImageCrop,
+    FilePondPluginImageResize,
+    FilePondPluginImageTransform,
+    FilePondPluginImageEdit
   );
+
+  /* Profile Picture Options */
+  FilePond.create(
+  	document.querySelector('#profile-picture'),
+  	{
+      labelIdle: `Drag & Drop your picture or <span class="filepond--label-action">Browse</span>`,
+      imagePreviewHeight: 170,
+      imageCropAspectRatio: '1:1',
+      imageResizeTargetWidth: 200,
+      imageResizeTargetHeight: 200,
+      stylePanelLayout: 'compact circle',
+      styleLoadIndicatorPosition: 'center bottom',
+      styleProgressIndicatorPosition: 'right bottom',
+      styleButtonRemoveItemPosition: 'left bottom',
+      styleButtonProcessItemPosition: 'right bottom'
+  	}
+  );
+  /* End of Profile Picture Options */
 
   // Select the file input and use
   // create() to turn it into a pond
   FilePond.create(
-      document.querySelector('input[type="file"]')
+      document.querySelector('#multiple-files')
   );
 
-
+  /*Upload file via rest call*/
   FilePond.setOptions({
-    server: 'https://192.168.0.108:9002/multiplefileupload'
+    server: 'https://192.168.0.109:9002/multiplefileupload'
   });
 
-  // console.log(pond);
-
-  /* Upload file with ajax request ends */
+  /* Upload file via FilePond with rest call ends */
 
 });
