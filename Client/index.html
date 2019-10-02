@@ -25,7 +25,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- End of JS links -->
 
-
   </head>
   <body>
 
@@ -48,19 +47,8 @@
       <h2 ><span class="typed-text"></span></h2>
     </div>
 
-    <!-- Upload file section -->
-    <!-- <div class="wrapper">
-      <div class="file-upload">
-          <input type="file" name="myFile" id="fileUpload" multiple/>
-          <i class="fas fa-cloud-upload-alt"></i>
-      </div>
-    </div> -->
-    <!-- Upload file section ends -->
-
-    <!-- <div id="download_section"></div> -->
-
     <section class="profile-section">
-      <h5 style="font-weight: bold;">Profile picture upload</h5>
+      <h5 style="font-weight: bold; margin-bottom: 25px;">Profile picture upload</h5>
       <input type="file" id="profile-picture"
       class="filepond"
       name="myFiles"
@@ -68,14 +56,15 @@
     </section>
 
     <!-- We'll transform this input into a pond -->
-    <div class="pond">
+    <section class="pond">
+      <h5 style="font-weight: bold; margin-bottom: 25px;">Upload multiple files</h5>
       <input type="file" id="multiple-files"
         class="filepond"
         name="myFiles"
         multiple
         data-max-file-size="3MB"
         data-max-files="3">
-    </div>
+    </section>
 
 
     <!-- Load FilePond library -->

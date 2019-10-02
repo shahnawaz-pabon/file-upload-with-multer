@@ -61,10 +61,11 @@ button.navbar-toggler {
 
 /* Input file styles */
 .pond {
-  margin-top: 50px;
+  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
   width: 18em;
+  text-align: center;
 }
 
 .filepond--drop-label label {
@@ -72,18 +73,6 @@ button.navbar-toggler {
   font-weight: bold !important;
   color: #4c4e53;
 }
-
-/* .filepond--drop-label {
-	color: #4c4e53;
-}
-
-.filepond--label-action {
-	text-decoration-color: #babdc0;
-}
-
-.filepond--panel-root {
-	background-color: #edf0f4;
-} */
 
 .filepond--root {
 	width:170px;
@@ -93,49 +82,5 @@ button.navbar-toggler {
 .profile-section {
   text-align: center;
   margin-top: 60px;
-}
-
-.wrapper{
-  width:100%;
-  height:100%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin-top: 50px;
-}
-
- .file-upload {
-  height:200px;
-  width:200px;
-  border-radius: 100px;
-  position:relative;
-
-  display:flex;
-  justify-content:center;
-  align-items: center;
-
-  border:4px solid #FFFFFF;
-  overflow:hidden;
-  background-image: linear-gradient(to bottom, #2c3e50 50%, #FFFFFF 50%);
-  background-size: 100% 200%;
-  transition: all 1s;
-  color: #FFFFFF;
-  font-size:100px;
-}
-
-.file-upload input[type='file']{
-  height:200px;
-  width:200px;
-  position:absolute;
-  top:0;
-  left:0;
-  opacity:0;
-  cursor: pointer;
-}
-
-.file-upload:hover{
-  background-position: 0 -100%;
-  /* color:#2590EB; */
-  color: #2c3e50;
 }
 /* End of Input file styles */
