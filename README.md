@@ -26,7 +26,7 @@
 #### Install the dependencies and start the server.
 
 ```bash
-$ git clone https://github.com/PabonSEC/File-Upload-With-Multer.git
+$ git clone https://github.com/shahnawaz-pabon/File-Upload-With-Multer.git
 $ cd File-Upload-With-Multer/Server
 $ npm i
 $ node server.js
